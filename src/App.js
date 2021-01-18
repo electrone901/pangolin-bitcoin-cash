@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Dashboard from './components/Dashboard';
 import GetBitcoinCash from './components/GetBitcoinCash';
+import SupportACause from './components/SupportACause';
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
         </Route>
         <Route path="/getbitcoincash">
           <GetBitcoinCash />
+        </Route>
+        <Route path="/supportacause">
+          <SupportACause />
         </Route>
         <Route path="/">
           <Home />

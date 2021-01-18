@@ -2,6 +2,10 @@ body{
     background-color: #61DADA;
 }
 
+i {
+    font-size: 2rem;
+}
+
 .header-sub{
     font-size: 2rem;
     line-height: .6;

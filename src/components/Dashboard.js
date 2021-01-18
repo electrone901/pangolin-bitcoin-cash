@@ -11,7 +11,7 @@ function Dashboard() {
           <div className="d-flex justify-content-around">
               <div>
                 <p>Get Bitcoin Cash</p>
-                <Link to="/">
+                <Link to="/getbitcoincash">
                     <img className="d-block m-auto" src="/images/bitcoinimage.png" alt="Bitcoin"/>
                 </Link>
               </div>
@@ -20,8 +20,10 @@ function Dashboard() {
                 <img className="d-block m-auto" src="/images/designerbag.png" alt="Bag"/>
               </div>
               <div>
-                <p>Get Bitcoin Cash</p>
-                <img className="d-block m-auto" src="/images/pangloin.png" alt="Pangloin"/>
+                <p>Support a cause</p>
+                <Link to="/supportacause">
+                  <img className="d-block m-auto" src="/images/pangloin.png" alt="Pangloin"/>
+                </Link>
               </div>
           </div>
       </div>

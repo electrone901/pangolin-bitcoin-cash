@@ -1,5 +1,5 @@
 export const SendBCHAPI = async () => {
-
+  let transactionRes = '';
   /*
     Send 1 satoshis to RECV_ADDR.
   */
@@ -139,12 +139,12 @@ export const SendBCHAPI = async () => {
           console.log(`https://explorer.bitcoin.com/bch/tx/${transactionInput}`)
         } else {
           console.log(`https://explorer.bitcoin.com/tbch/tx/${transactionInput}`)
+          alert(`https://explorer.bitcoin.com/tbch/tx/${transactionInput}`)
         }
       }
-
+      
       transactionStatus(txidStr, NETWORK);
-      console.log(txidStr, "fddsfs")
-      return txidStr[0];
+      transactionRes = txidStr[0];
     } catch (err) {
       console.log('error: ', err)
     }
@@ -219,4 +219,6 @@ export const SendBCHAPI = async () => {
 
     return utxos[largestIndex]
   }
+  console.log("tewisef",  transactionRes)
+  return transactionRes;
 }

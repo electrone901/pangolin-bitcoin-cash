@@ -30,6 +30,14 @@ function Home() {
                 </button>
                 <p className="mb-3">Already a member? Log in</p>
               </div>
+          </div>
+          <div className="d-flex justify-content-between align-items-center">
+            <div>
+              <p className="h4">Like, follow and share the PangoLove:</p>
+              <i className="fab fa-facebook-square mr-3"></i>
+              <i className="fab fa-twitter-square"></i>
+            </div>
+            
             <img className="d-block" src="/images/pangloin2.png" alt="Pangloin"/>
           </div>
     </div>

@@ -6,11 +6,9 @@ function Test() {
   const [transactionStatus, setTransactionStatus] = useState("");
 
   async function send(){
-    let transactionInput = '';
 
-    transactionInput = await SendBCHAPI();
-    console.log("did i get it ", transactionInput)
-    setTransactionStatus('fsf');
+    await SendBCHAPI();
+    setTransactionStatus("Success");
   }
   return (
     <div className="container">
